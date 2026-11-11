@@ -1,0 +1,65 @@
+[
+  {
+    "id": "python-functions",
+    "title": "Python Functions",
+    "summary": "How to define, call and return values from functions, and how arguments are passed.",
+    "prerequisites": ["Variables", "Basic data types"],
+    "key_concepts": ["def keyword", "Parameters and arguments", "Return values", "Default arguments"],
+    "common_mistakes": ["Forgetting the return statement", "Using a mutable object as a default argument"],
+    "practice_idea": "Write a function that returns the largest of three numbers without using max()."
+  },
+  {
+    "id": "python-closures",
+    "title": "Python Scope and Closures",
+    "summary": "How Python finds variable names (LEGB rule) and how an inner function can remember variables from its enclosing function.",
+    "prerequisites": ["Python Functions"],
+    "key_concepts": ["LEGB rule", "Nested functions", "nonlocal keyword", "Closures"],
+    "common_mistakes": ["Modifying an outer variable without nonlocal", "Confusing local and global scope"],
+    "practice_idea": "Create a make_counter() function that returns a function incrementing a private counter."
+  },
+  {
+    "id": "python-decorators",
+    "title": "Python Decorators",
+    "summary": "Decorators wrap a function to add behavior (logging, timing, checks) without changing its code.",
+    "prerequisites": ["Python Functions", "Python Scope and Closures"],
+    "key_concepts": ["Functions as first-class objects", "Higher-order functions", "Wrapper functions", "@ syntax", "functools.wraps"],
+    "common_mistakes": ["Forgetting to return the wrapper function", "Calling the function instead of returning it", "Losing the original function name without functools.wraps"],
+    "practice_idea": "Create a decorator that logs the name and arguments of each function call."
+  },
+  {
+    "id": "python-classes",
+    "title": "Python Classes and Objects",
+    "summary": "How to model data and behavior together with classes, instances, attributes and methods.",
+    "prerequisites": ["Python Functions"],
+    "key_concepts": ["class keyword", "__init__ method", "self", "Instance vs class attributes", "Inheritance"],
+    "common_mistakes": ["Forgetting self as the first method parameter", "Sharing a mutable class attribute between instances"],
+    "practice_idea": "Create a Rectangle class with width, height, area() and perimeter() methods."
+  },
+  {
+    "id": "c-pointers",
+    "title": "C Pointers",
+    "summary": "A pointer stores a memory address; it lets functions modify variables and work with arrays and dynamic memory.",
+    "prerequisites": ["C variables and types", "C functions"],
+    "key_concepts": ["Address-of operator &", "Dereference operator *", "Pointer arithmetic", "NULL pointer"],
+    "common_mistakes": ["Dereferencing an uninitialized or NULL pointer", "Confusing the pointer with the value it points to"],
+    "practice_idea": "Write a swap(int *a, int *b) function that exchanges two integers."
+  },
+  {
+    "id": "c-recursion",
+    "title": "Recursion in C",
+    "summary": "A recursive function solves a problem by calling itself on a smaller version of the same problem.",
+    "prerequisites": ["C functions", "Conditions"],
+    "key_concepts": ["Base case", "Recursive case", "Call stack", "Stack overflow"],
+    "common_mistakes": ["Missing or unreachable base case", "Not making the problem smaller at each call"],
+    "practice_idea": "Write a recursive function that prints a string in reverse."
+  },
+  {
+    "id": "sql-joins",
+    "title": "SQL Joins",
+    "summary": "Joins combine rows from several tables using a related column, usually a foreign key.",
+    "prerequisites": ["SQL SELECT", "Primary and foreign keys"],
+    "key_concepts": ["INNER JOIN", "LEFT JOIN", "ON clause", "Table aliases"],
+    "common_mistakes": ["Forgetting the ON condition (cartesian product)", "Using INNER JOIN when unmatched rows must be kept"],
+    "practice_idea": "List every author with the number of books they wrote, including authors with zero books."
+  }
+]
